@@ -1,0 +1,41 @@
+{
+  "name": "cryptochain",
+  "version": "1.0.0",
+  "description": "Its is a cryptochain project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node index.js",
+    "dev": "npm run start-redis && nodemon index.js",
+    "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js",
+    "start-redis": "redis-server --daemonize yes"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sehermahmud/cryptochain.git"
+  },
+  "author": "Seher Mahmud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sehermahmud/cryptochain/issues"
+  },
+  "homepage": "https://github.com/sehermahmud/cryptochain#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "elliptic": "^6.5.3",
+    "express": "^4.17.1",
+    "hex-to-binary": "^1.0.1",
+    "pubnub": "^4.28.1",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "uuid": "^8.2.0"
+  }
+}
