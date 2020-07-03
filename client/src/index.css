@@ -1,6 +1,6 @@
 body {
-    height: 2500px;
-    background: linear-gradient(141deg, #f5b2df 0%, #95e1fd 45%, #f5b2df 60%, #95e1fd 80%);
+    height: 655px;
+    background: linear-gradient(141deg, #4444 0%, #4444 40%, #ffff 90%);
     text-align: center;
     font-size: 20px;
     font-family: 'Bitter', serif;
@@ -27,4 +27,17 @@ body {
     border: 1px solid black;
     padding: 5%;
     margin: 2%;
+}
+
+.Transaction {
+    padding: 5%;
+}
+
+.ConductTransaction {
+    margin: 10%;
+}
+
+a, a:hover {
+    color: #e66;
+    text-decoration: underline;
 }
